@@ -1,4 +1,4 @@
-# docker-mc-eternal
+# docker-mc-valhelsia-3
 Docker setup for Minecraft
 
 # How to
