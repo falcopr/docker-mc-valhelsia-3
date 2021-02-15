@@ -27,6 +27,8 @@ services:
       MEMORY: "8G"
       # MEMORY: "3G"
     restart: always
+    stdin_open: true
+    tty: true
 
 volumes:
   mc-data:
