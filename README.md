@@ -19,4 +19,4 @@ For setting up cron its mostly based upon this stackoverflow entry: https://stac
 6. Run cron with tailing its log: `crond -f`
 
 # Sources
-(Crontab guru)[https://crontab.guru]
+[https://crontab.guru](Crontab guru)
