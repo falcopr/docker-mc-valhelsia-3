@@ -16,7 +16,7 @@ For setting up cron its mostly based upon this stackoverflow entry: https://stac
 3. Inside this file enter your cron-schedule, like this e.g. to restart every day at 6:10 am: `10 6 * * * root docker restart mc_valhelsia_3_minecraft_1 > /proc/1/fd/1 2>/proc/1/fd/2`
 4. Give it execution right: `chmod 0644 /etc/cron.d/cron-docker`
 5. Apply cron job: `crontab /etc/cron.d/cron-docker`
-6. Run cron with tailing its log: `crond -f`
+6. Run cron with tailing its log: `crond -f -d 8`
 
 # Sources
 Crontab guru: https://crontab.guru
