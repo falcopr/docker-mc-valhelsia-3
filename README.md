@@ -17,4 +17,4 @@ For setting up cron its mostly based upon this stackoverflow entry: https://stac
 4. Give it execution right: `chmod 0644 /etc/cron.d/cron-docker`
 5. Apply cron job: `crontab /etc/cron.d/cron-docker`
 6. Create a cron-log `touch /var/log/cron.log`
-7. Run cron with tailing its log: `cron && tail -f /var/log/cron.log`
+7. Run cron with tailing its log: `crond && tail -f /var/log/cron.log`
