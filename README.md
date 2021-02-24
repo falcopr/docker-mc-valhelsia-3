@@ -7,6 +7,12 @@ Docker setup for Minecraft
 3. For backup use backup.sh (automization via cron_backup.sh possible)
 4. Run down.sh for stopping the containers and cleanup
 
-Automatic restart from one docker container to another
+# Automatic restart from one docker container to another
+
+For setting up cron its mostly based upon this stackoverflow entry: https://stackoverflow.com/questions/37458287/how-to-run-a-cron-job-inside-a-docker-container
+
 1. Run a privileged container with crontab and docker inside of it: `docker run -it --rm --privileged --name cron-docker -v /var/run/docker.sock:/var/run/docker.sock docker:latest /bin/sh`
-2. TODO
+2. Create a new file in /etc/cron.d for the job named "cron-docker": `touch /etc/cron.d/cron-docker`
+3. Give it execution right: `chmod 0644 /etc/cron.d/cron-docker`
+4. Apply cron job: `crontab /etc/cron.d/cron-docker`
+5. Run cron: `cron`
