@@ -20,3 +20,4 @@ For setting up cron its mostly based upon this stackoverflow entry: https://stac
 
 # Sources
 Crontab guru: https://crontab.guru
+https://gist.github.com/andyshinn/3ae01fa13cb64c9d36e7
